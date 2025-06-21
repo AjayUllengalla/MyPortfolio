@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajay Ullengalla Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel = "stylesheet" href="about.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Ajay</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="./assests/Ullengalla Ajay.pdf" class="resume-btn" download>Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="./assests/Ajay.jpg" alt="Ajay's Photo" class="profile-photo" />
+      <div>
+        <h1>Hi, I'm Ajay</h1>
+        <p>Aspiring Software Developer | Building Scalable & Efficient Solutions | Always Learning 🚀</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>I’m an enthusiastic and detail-oriented Entry-Level Software Developer with a strong foundation in Java, SQL, HTML, CSS, JavaScript, and Spring Boot. I’m passionate about solving real-world problems through clean, efficient code and building scalable applications.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="Skills" class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+
+      <!-- Technical Skills -->
+      <div class="skills-box">
+        <h3>💻 Technical Skills</h3>
+        <div class="tech-skills-grid">
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills-box">
+        <h3>🛠️ Tools</h3>
+        <div class="tech-skills-grid">
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
+          <div class="tech-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"><span>IntelliJ</span></div>
+          <div class="tech-skill"><img src="https://www.stickpng.com/assets/thumbs/580b57fcd9996e24bc43c50f.png" alt="Postman"><span>Postman</span></div>
+          <div class="tech-skill"><img src="https://iconduck.com/wp-content/uploads/2023/02/mysql-workbench-icon.png" alt="MySQL Workbench"><span>MySQL Workbench</span></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skills-box">
+        <h3>🧠 Soft Skills</h3>
+        <ul class="skill-list">
+          <li>Problem Solving</li>
+          <li>Team Collaboration</li>
+          <li>Time Management</li>
+          <li>Communication</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="Projects" class="project-section">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-box">
+        <h3>Object Detection Framework</h3>
+        <p>YOLO-based real-time object detection system with Spring Boot and REST APIs.</p>
+      </div>
+      <div class="project-box">
+        <h3>Expense Tracker System</h3>
+        <p>Track, categorize, and visualize expenses using Spring Boot, MySQL, and HTML/CSS.</p>
+      </div>
+      <div class="project-box">
+        <h3>Internship Job Portal</h3>
+        <p>Job board app for students and recruiters with resume uploads and filters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/mwkjaqwd" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-message" style="display:none; color: green;">Thank you! Your message has been sent.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Ajay Ullengalla. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById('form-message').style.display = 'block';
+          form.reset();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
