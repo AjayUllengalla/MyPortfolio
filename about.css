@@ -1,0 +1,201 @@
+/* Reset & Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Scroll Animation */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+[data-aos="fade-up"] {
+  transform: translateY(30px);
+}
+[data-aos="fade-in"] {
+  transform: scale(0.95);
+}
+
+/* Navbar */
+
+/* Hero Section Enhancements */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+  animation: fadeSlideIn 1s ease-in-out;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #5c8df6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  color: #2e3d49;
+}
+.hero p {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* About Section Enhancements */
+.about-section {
+  background: linear-gradient(to right, #fafafa, #f0f4f8);
+}
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+.about-me h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+.about-me h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #5c8df6;
+  border-radius: 2px;
+}
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+/* Remaining styles unchanged */
+.contact-section {
+  background: linear-gradient(to right, #f8faff, #e8f0ff);
+  transition: background-color 0.5s ease-in-out;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  animation: fadeSlideIn 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.contact-form.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5c8df6;
+  outline: none;
+}
+.contact-form button {
+  background-color: #5c8df6;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #476cdb;
+  transform: translateY(-2px);
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer {
+  background: #e4cfcf;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .skills-box, .project-box {
+    width: 90%;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
