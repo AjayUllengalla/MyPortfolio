@@ -1,3 +1,4 @@
+
 /* Reset & Base Styles */
 body, html {
   margin: 0;
@@ -328,3 +329,9 @@ section {
     font-size: 1rem;
   }
 }
+.nav-links a {
+    font-size: 1rem;
+  }
+  .resume-btn {
+    font-size: 0.9rem;
+  }
